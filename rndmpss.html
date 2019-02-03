@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/rndmpss.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <div class="container">
+            <form action="" name="passGen">
+                <div class="row">
+                    <div class="col-12">
+                        <input type="text" size="18" name="output" class="out" disabled>
+                        <input type="button" class="btn btn-success btn-block myBtn" value="Generate Password" onclick="populateform(this.form.length.value)"><br>
+                    </div>
+                        <div class="col-10">
+                        <strong class="pass">Password Length: </strong>
+                        </div>
+                        <div class="col-2">
+                        <input type="text" name="length" size="3" value="6" class="in">
+                        </div>
+                   
+                </div>    
+             </form>
+    </div>
+    <script src="js/randmpss.js"></script>
+</body>
+</html>
