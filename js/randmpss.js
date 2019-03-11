@@ -1,12 +1,12 @@
-var keylist="abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*"
+var keylist="abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var tmp=''
 function generatepass(plength){
     tmp=''
     for(i=0;i<plength;i++){
-        tmp+=keylist.charAt(Math.floor(Math.random()*keylist.length))
+        tmp+=keylist.charAt(Math.floor(Math.random()*keylist.length));
     }
-    return tmp
+    return tmp;
 }
 function populateform(enterlength){
-    document.passGen.output.value=generatepass(enterlength)
+    document.passGen.output.value=generatepass(enterlength);
 }
